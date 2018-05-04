@@ -16,13 +16,15 @@
             const windowWidth = window.innerWidth;
             const windowHeight = window.innerHeight;
             function myFunction(e) {
+                
+                console.log('asdasd');
             
                 $('.startjourney').hover(
                     function() {
-                        $('#start').attr("src", "images/start-journey-button.gif");
+                        $('#start').attr("src", "images/final-stage-updated-withtxt-2.gif");
                     },
                     function() {
-                        $('#start').attr("src", "images/start-journey-button.png");
+                        $('#start').attr("src", "images/final-stage-updated-withtxt-3-first.png");
                     }
                 );
 
@@ -32,28 +34,28 @@
 //            var coor = "Coordinates: (" + mouseX + "," + mouseY + ")";
 //            document.getElementById("demo").innerHTML = coor;
             // sun
-            var x = mouseX * 0.25;
-            var y = mouseY * 0.25;
+            var x = mouseX * 0.35;
+            var y = mouseY * 0.35;
             var sun1 = document.getElementById("sun1").style;
             sun1.transform = `translate3d(${x}%, -${y}%, 0)`;
-            x = mouseX * 0.25;
-            y = mouseY * 0.25;
+            x = mouseX * 0.35;
+            y = mouseY * 0.35;
             var sun2 = document.getElementById("sun2").style;
             sun2.transform = `translate3d(-${x}%, ${y}%, 0)`;
-            x = mouseX * 0.25;
-            y = mouseY * 0.25;
+            x = mouseX * 0.35;
+            y = mouseY * 0.35;
             var sun3 = document.getElementById("sun3").style;
             sun3.transform = `translate3d(${x}%, -${y}%, 0)`;
-            x = mouseX * 0.25;
-            y = mouseY * 0.25;
+            x = mouseX * 0.35;
+            y = mouseY * 0.35;
             var sun4 = document.getElementById("sun4").style;
             sun4.transform = `translate3d(-${x}%, ${y}%, 0)`;
-            x = mouseX * 0.25;
-            y = mouseY * 0.25;
+            x = mouseX * 0.35;
+            y = mouseY * 0.35;
             var sun5 = document.getElementById("sun5").style;
             sun5.transform = `translate3d(${x}%, ${y}%, 0)`;
-            x = mouseX * 0.25;
-            y = mouseY * 0.25;
+            x = mouseX * 0.35;
+            y = mouseY * 0.35;
             var sun6 = document.getElementById("sun6").style;
             sun6.transform = `translate3d(-${x}%, -${y}%, 0)`;
             // hill
@@ -123,7 +125,7 @@
                     <div class="button col-xs-2">
                    <!--  <img class="inkdrop" src="images/start-journey-interaction.gif"> -->
                     <a class="start" href="about.html">
-                    <img id="start" class="startjourney" src="images/start-journey-button.png">
+                    <img id="start" class="startjourney" src="images/final-stage-updated-withtxt-3-first.png">
                     </a>
                     </div>
                     <div class="col-xs-5"></div>

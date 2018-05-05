@@ -71,7 +71,7 @@ body {
     /*background-color: beige;*/
 }
 
-.sec img {
+.sec1 img, .sec2 img{
     max-width: 100%;
     height: auto;
     width: auto; /* ie8 */
@@ -108,25 +108,25 @@ body {
 .para{
     font-size: 1em;
     line-height:1.68em;
-    margin-top:4vw;
+    margin-top:2vw;
     
 }
 
 .sec1 .text{
     margin-top:10vw;
-    background-image: url("/images/dot1.png");
+    background-image: url("/images/dot1-yellow.png");
     background-repeat: no-repeat;
     background-position: 20vw -3vw; 
-    background-blend-mode: overlay;
+    
     
 }
 
 .sec2 .text{
     margin-top:10vw;
-    background-image: url("/images/dot1.png");
+    background-image: url("/images/dot1-yellow.png");
     background-repeat: no-repeat;
     background-position: 5vw -4vw; 
-    background-blend-mode: overlay;
+    
 }
 
 /*-----about us-------*/
@@ -136,7 +136,7 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 2vw;
+    margin: 0.5vw;
 }
 
 .name{
@@ -152,6 +152,7 @@ body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 /*----footer---*/

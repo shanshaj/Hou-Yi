@@ -71,7 +71,7 @@ body {
     /*background-color: beige;*/
 }
 
-.sec1 img, .sec2 img{
+.sec img{
     max-width: 100%;
     height: auto;
     width: auto; /* ie8 */
@@ -154,6 +154,14 @@ body {
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+
+/*---process---*/
+
+.sec6 .material {
+   
+}
+
+
 
 /*----footer---*/
 footer {

@@ -226,11 +226,11 @@ footer {
     
     .sec3 .material {
         display:inline-block;
-        background: #fcf;
+/*         background: #fcf; */
     }
     .sec3 .material .profile img {
         width: 100%;
-        background: #ffc;
+/*         background: #ffc; */
         flex-shrink: 0;
     }
     

@@ -8,9 +8,9 @@ html {
 }
 
 h1 { 
-    font-family: 'HL Thuphap 1BK upgrade Regular', sans-serif;
+    font-family: 'Brandon Text', sans-serif;
     font-size: 3em;
-/*     font-weight: 500; */
+    font-weight: 500;
     padding-bottom: .5em;
     line-height: 2em;
     /*color:darkslategray;*/
@@ -34,7 +34,6 @@ p, em {
     padding-bottom: .5em;
 }
 
-
 .clear {
     clear: both;
 }
@@ -49,13 +48,14 @@ body {
 .nav ul li a{
     text-decoration: none;
     color: black;
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 1.3em;
+    font-weight: 500;
 }
 
 /*===images===*/
 .logo {
-    width: 50px;
+    width: 40px;
+  
 }
 
 nav ul li {
@@ -65,7 +65,7 @@ nav ul li {
 
 .nav {
     text-align: right;
-    margin-top: 30px;
+    margin-top: 18px;
 }
 
 .darken {
@@ -74,7 +74,7 @@ nav ul li {
     height: 100vh;
 }
 
- .hill {
+.hill {
     bottom: -5vw;
     left: -5vw;
      width: 110vw;
@@ -89,10 +89,25 @@ nav ul li {
 }
 
 .startjourney {
+    /*mix-blend-mode: multiply;*/
     width: 150px;
     z-index: 100;
 }
+.hill, .sun{
+    will-change: transform; 
+    transition:transform 1.2s ease-in-out;
+    transition-timing-function: cubic-bezier(.28,.63,.77,.92)
+    
+}
+.title1{
+  width:600px;
+  margin-bottom:10px;
+  
+}
 
+#start {
+    /*mix-blend-mode: darken;*/
+}
 /*
 #top-image {
 background:url('https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/0/8/8905/red-rocks-park-o.jpg') -25px -50px;
@@ -105,6 +120,27 @@ z-index:0;
 }
 */
 
+/*=====Layer=====*/
+.homecontainer {
+  z-index:2;
+}
+
+.title {
+   z-index:10;
+}
+
+.darken{
+  z-index:0;
+}
+
+.bottom{
+  z-index:12;
+}
+
+.nav {
+    z-index: 11;
+}
+
 /*=====BODY=====*/
 .title {
     text-align:center;
@@ -112,8 +148,12 @@ z-index:0;
     top: 15vw;
 }
 
+.title p {
+    font-size: 1.5em;
+}
+
 .button {
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 .bottomtext {
@@ -127,12 +167,13 @@ z-index:0;
 }
 
 .b2 {
-    left: 150px;
+    left: 160px;
     bottom: 55px;
 }
 .bottomtext p{
     color: #fff;
     font-weight:100;
+    
 }
 
 .bottomimage p{
@@ -141,12 +182,15 @@ z-index:0;
     font-size: 0.9em;
     line-height: 1.5em;
 }
+
 .b1{
     display:inline-block;
+    margin-left: 15px;
 }
 
 .nav-container {
     padding: 20px 30px;
+  
 }
 
 .content {
@@ -162,4 +206,46 @@ z-index:0;
 /*=======About page=======*/
 .content{
     margin-top: 20vh;
+}
+
+/*============MEDIA=============*/
+
+@media screen and (max-width: 650px) {
+    .title1 {
+        width: 300px;
+        margin-top: 80px;
+    }
+    
+    .start {
+        position:fixed;
+        left: 35vw;
+    }
+    
+    body {
+    background-size: 100% 100%;
+    }
+    
+    .button {
+    margin-top: 0;
+    }
+    
+    .bottom p{
+        text-align: center;
+        color: #000;
+    }
+    
+    .b1 {
+        left: 33vw;
+        display:block;
+    }
+    .b2 {
+        float:none;
+        left:30vw;
+        bottom: 30px;
+    }
+    .bottomtext {
+        margin-top: 40vh;
+        position: absolute;
+        left: 0vw;
+    }
 }

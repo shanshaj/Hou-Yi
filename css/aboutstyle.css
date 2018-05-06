@@ -47,11 +47,34 @@ body {
 
 /*-----navbar basic-----*/
 
-.nav2 a {
+/*======nav======*/
+.nav ul li a{
     text-decoration: none;
-    color:#fff;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 500;
 }
 
+.nav-container {
+    padding: 20px 30px; 
+}
+
+.logo {
+    width: 40px;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-left: 2em;
+}
+
+.nav {
+    text-align: right;
+    margin-top: 18px;
+}
+
+
+/*
 .nav-container{
     height:160px;
     top:0;
@@ -62,6 +85,7 @@ body {
     justify-content: space-between;
     margin:0 50px;
 }
+*/
 
 /*---main basic----*/
 
@@ -162,8 +186,78 @@ body {
 }
 
 
-
 /*----footer---*/
 footer {
     height:200px;
+}
+
+
+
+/*============MEDIA=============*/
+
+@media screen and (max-width: 750px) {
+.sec {
+    display:block;
+    margin-left:8%;
+    margin-right:8%;
+    width: 100%;
+    margin-bottom: 20vw;
+    margin-top:5vw;
+}
+    
+    
+.sub{
+    width: 80%;
+    /*background-color: aqua;*/
+    padding:2%;
+}
+    
+    .sec1 .material img, .sec2 .material img{
+        width: 40%;
+    } 
+    
+    .sec2 .material img {
+        display: hidden;
+    }
+
+    .sec2 .title img{
+        width: 50%;
+    }
+    
+    .sec3 .material {
+        display:inline-block;
+        background: #fcf;
+    }
+    .sec3 .material .profile img {
+        width: 100%;
+        background: #ffc;
+        flex-shrink: 0;
+    }
+    
+    body {
+    margin:0;
+    border:0; 
+    background-image: url("../images/long_bg_mobile.png");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+/*
+.profile{
+    display:flex;
+    align-items: center;
+    margin: 0.5vw;
+    width: 50%;
+}
+
+.sec3 .material{
+    display:flex;
+}
+    
+    .sec3 .material img {
+        width: 30vw;
+        height: auto;
+    }
+*/
+
 }

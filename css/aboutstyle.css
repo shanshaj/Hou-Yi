@@ -92,6 +92,7 @@ nav ul li {
 .main_container{
     width:100%;
     max-width: 100%;
+    
     /*background-color: beige;*/
 }
 
@@ -99,6 +100,7 @@ nav ul li {
     max-width: 100%;
     height: auto;
     width: auto; /* ie8 */
+    
 }
 .sec {
     display:flex;
@@ -127,6 +129,7 @@ nav ul li {
     font-family: "HL";
     font-size: 3.5em;
     margin:2vw 0;
+    
 }
 
 .para{
@@ -141,7 +144,7 @@ nav ul li {
     background-image: url("/images/dot1-yellow.png");
     background-repeat: no-repeat;
     background-position: 20vw -3vw; 
-    
+    z-index: 100;
     
 }
 
@@ -210,10 +213,12 @@ footer {
     width: 80%;
     /*background-color: aqua;*/
     padding:2%;
+     z-index: 11;
 }
     
     .sec1 .material img, .sec2 .material img{
         width: 40%;
+        z-index: 11;
     } 
     
     .sec2 .material img {

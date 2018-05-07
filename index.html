@@ -83,19 +83,27 @@
             x = mouseX * 0.5;
             y = mouseY * 0.5;
             var hill1 = document.getElementById("hill1").style;
-            hill1.transform = `translate3d(-${x}%, -${y}%, 0)`;
+            hill1.transform = `translate3d(${x}%, ${y}%, 0)`;
             x = mouseX * 1;
             y = mouseY * 1;
             var hill2 = document.getElementById("hill2").style;
-            hill2.transform = `translate3d(-${x}%, -${y}%, 0)`;
-            x = mouseX * 2;
+            hill2.transform = `translate3d(${x}%, ${y}%, 0)`;
+            x = mouseX * 1.5;
+            y = mouseY * 1;
+            var hill31 = document.getElementById("hill3-1").style;
+            hill31.transform = `translate3d(${x}%, ${y}%, 0)`;
+            x = mouseX * 1.5;
+            y = mouseY * 1;
+            var hill32 = document.getElementById("hill3-2").style;
+            hill32.transform = `translate3d(${x}%, ${y}%, 0)`;
+            x = mouseX * 3;
             y = mouseY * 1.5;
-            var hill3 = document.getElementById("hill3").style;
-            hill3.transform = `translate3d(-${x}%, -${y}%, 0)`;
+            var hill33 = document.getElementById("hill3-3").style;
+            hill33.transform = `translate3d(${x}%, ${y}%, 0)`;
             x = mouseX * 5;
             y = mouseY * 3;
             var hill4 = document.getElementById("hill4").style;
-            hill4.transform = `translate3d(-${x}%, -${y}%, 0)`;
+            hill4.transform = `translate3d(${x}%, ${y}%, 0)`;
         }
 
 
@@ -146,7 +154,10 @@
         <div class="hill-container" id='stage-container'>
             <img id="hill1" class="hill hill1" src="images/hills/yi-hill-furthest.png">
             <img id="hill2" class="hill hill2" src="images/hills/yi-hill-middle.png">
-            <img id="hill3" class="hill hill3" src="images/hills/yi-hill-nearer.png">
+<!--            <img id="hill3" class="hill hill3" src="images/hills/yi-hill-nearer.png">-->
+            <img id="hill3-1" class="hill hill3-1" src="images/hills/mountaingroup-furthest.png">
+            <img id="hill3-2" class="hill hill3-2" src="images/hills/mountaingroup-middle2.png">
+            <img id="hill3-3" class="hill hill3-3" src="images/hills/mountaingroup-closest.png">
             <img id="hill4" class="hill hill4" src="images/hills/yi-hill-closest.png">
         </div>
         

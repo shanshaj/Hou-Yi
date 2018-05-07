@@ -84,6 +84,27 @@ nav ul li {
      position:fixed;
 }
 
+.hill3-1 {
+    left:-3vw;
+    bottom: -3vw;
+    width: 115vw;
+}
+
+.hill3-2 {
+    left: -5vw;
+    bottom: -5vw;
+    width: 110vw;
+}
+
+.hill3-3 {
+    left: -10vw;
+    width: 115vw;
+}
+
+.hill4 {
+    bottom: -3vw;
+}
+
 .sun {
     width: 95vw;
     position: fixed;

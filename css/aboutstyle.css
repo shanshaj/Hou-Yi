@@ -60,7 +60,18 @@ body {
 }
 
 .logo {
-    width: 40px;
+    padding: 4px 0 0 0;
+    width: 55px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.logo:hover{
+    animation-name: spin;
+    animation-duration: 2s;
 }
 
 nav ul li {

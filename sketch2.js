@@ -32,7 +32,7 @@ function draw() {
   
   randomSeed(9);
   for(var i=0;i<6;i++){
-    var size=random(100,250)
+    var size=random(120,280)
     nx=(noise(i+a)-.5)*size*2;
     ny=(noise(i+b)-.5)*size*2;
     sun[i].size(size,size);

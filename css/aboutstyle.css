@@ -207,7 +207,28 @@ footer {
 
 
 
+.sec .para{
+    font-family: "Brandon text";
+    font-weight: 400;
+    font-size: 1.3em;
+    -webkit-font-size: 1.3em;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
+}
+
+
+
 /*============MEDIA=============*/
+@media screen and (max-width: 1300px) {
+    .sec .para{
+    font-family: "Brandon text";
+    font-weight: 400;
+    font-size: 1.1em;
+    -webkit-font-size: 1.1em;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
+}
+
 
 @media screen and (max-width: 750px) {
 .sec {
@@ -257,6 +278,16 @@ footer {
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;
+        font-family: "Brandon text" !important;
+}
+    
+    .sec .para{
+    font-family: "Brandon text";
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-font-size: 1em;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
 }
 /*
 .profile{
@@ -277,3 +308,5 @@ footer {
 */
 
 }
+
+

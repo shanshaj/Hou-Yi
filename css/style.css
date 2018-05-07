@@ -44,6 +44,8 @@ body {
 }
 
 
+
+
 /*======nav======*/
 .nav ul li a{
     text-decoration: none;
@@ -54,7 +56,8 @@ body {
 
 /*===images===*/
 .logo {
-    width: 40px;
+    padding: 4px 0 0 0;
+    width: 55px;
   
 }
 
@@ -248,4 +251,11 @@ z-index:0;
         position: absolute;
         left: 0vw;
     }
+    
+    svg#stage-master {
+  background: black;
+}
+
+
+
 }

@@ -246,6 +246,7 @@ footer {
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;
+        font-family: "Brandon text" !important;
 }
 /*
 .profile{
@@ -266,3 +267,11 @@ footer {
 */
 
 }
+
+.sec .para{
+    font-family: "Brandon text";
+    font-weight: 400;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
+}
+

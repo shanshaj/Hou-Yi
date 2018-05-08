@@ -43,16 +43,41 @@ body {
     background-size: 100%;
 }
 
-
+.about{
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: .4s;
+}
+.about:hover {
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
 
 
 /*======nav======*/
 .nav ul li a{
+     font-family: 'Brandon Text', sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 500;
 }
+.nav ul li:hover a{
+     font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: .4s;
+}
+
+
 
 /*===images===*/
 .logo {
@@ -60,6 +85,16 @@ body {
     width: 55px;
   
 }
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.logo:hover{
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
 
 nav ul li {
     display:inline-block;
@@ -69,6 +104,9 @@ nav ul li {
 .nav {
     text-align: right;
     margin-top: 18px;
+}
+.nav-container {
+    padding: 20px 30px; 
 }
 
 .darken {

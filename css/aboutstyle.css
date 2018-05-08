@@ -13,7 +13,7 @@ html {
 body {
     margin:0;
     border:0; 
-    background-image: url("../images/long_bg.png");
+    background-image: url("../images/long_2.png");
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -45,17 +45,47 @@ body {
 }
 
 
-
+nav ul li {
+    display:inline-block;
+    margin-left: 2em;
+}
 /*-----navbar basic-----*/
 
-/*======nav======*/
-.nav ul li a{
+
+.aboutButton{
+     font-family: 'Brandon Text', sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.aboutButton:hover {
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
+/*======nav======*/
+.nav ul li a{
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.nav {
+    text-align: right;
+    margin-top: 18px;
+}
+
+.nav {
+    text-align: right;
+    margin-top: 18px;
+}
 .nav-container {
     padding: 20px 30px; 
 }
@@ -63,6 +93,7 @@ body {
 .logo {
     padding: 4px 0 0 0;
     width: 55px;
+    color: black;
 }
 
 @keyframes spin {
@@ -73,6 +104,7 @@ body {
 .logo:hover{
     animation-name: spin;
     animation-duration: 2s;
+    color: black;
 }
 
 nav ul li {
@@ -219,6 +251,27 @@ footer {
     -webkit-font-weight: 400;
 }
 
+/*----Carousel---*/
+#carouselExampleIndicators{
+    width:80%; 
+}
+
+.carousel-inner{
+border-radius: 15px 15px 15px 15px; 
+}
+    
+/*----Animation---*/
+#set-height {
+  display: block;
+}
+#v0 {
+/*  position: fixed;*/
+/*
+  top: 0;
+  left: 0;
+*/
+  width: 50%;
+}
 
 
 
@@ -314,5 +367,8 @@ footer {
 */
 
 }
+
+
+
 
 

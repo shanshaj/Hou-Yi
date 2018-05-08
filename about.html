@@ -4,6 +4,7 @@
     <title>Hou Yi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -12,16 +13,12 @@
     <link rel="stylesheet" type="text/css" href="css/aboutstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="responsive-nav.css">
-    
     <script src="js/responsive-nav.js"></script>
-
     <script src="libraries/p5.js" type="text/javascript"></script>
-
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
-
     <script src="sketch2.js" type="text/javascript"></script>
-<!-- scroll animation-->
+<!-- scroll animation library-->
     <link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script>
@@ -41,15 +38,11 @@
 //                );
 //            }
         </script>
-
-
-
-
 </head>
+
 
 <body  class="about">
     <div class="homecontainer">
-       
         <div onmousemove="myFunction(event)"  class="nav-container">
             <div class="col-xs-2">
                 <a href="index.html"><img class="logo" id="logo" src="images/logo-houyi.png"></a>
@@ -68,30 +61,8 @@
             </div>
         </div>
         
-        <!--
-            <div class="content col-xs-12">
-               <div class="col-xs-7 col-md-7">
-                    
-                </div>
-                <div class="col-xs-5 col-md-5">
-                    <div class="row">
-                        <h3>ABOUT US</h3>
-                    </div>
-                    <div class="row">
-                        <h2>MEET THE TEAM</h2>
-                    </div>
-                    <div class="row">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique, felis in scelerisque vestibulum, quam felis laoreet tellus, scelerisque auctor enim justo bibendum enim. Quisque porta viverra diam, quis vestibulum lorem pharetra non. Proin dictum massa non lacus pulvinar, vel viverra sem venenatis. Nullam nec augue orci.</p>
-                    </div>
-                </div>
-            </div>
-            
--->
-
+<!--content container-->
         <div class="main_container">
-
-            <div class="sec1 right sec">
-                <div class="sub material">
 <!-- animation-->      
 <!--
 data-0     --  data-2000 stop; show section1
@@ -99,37 +70,38 @@ data-2000  --  data-2500 move section1 ; show section2
 data-2500  --  data-4500 stop; show section2
 data-4500  --  data-5000 move section2 ; show rest
 -->
+            
+            <!--section 1-->
+            <div class="sec1 right sec">
+                <div class="sub material">
                     <div  
                        data-0="left:5%; bottom:0%;" data-2000="left:5%; bottom:0%;" 
                        data-2500="left:5%; bottom:0%;" data-4500="left:5%; bottom:0%;"
                        data-4500="left:5%; bottom:0%;" data-5000="left:5%; bottom:200%;"
                        class="sub material">
-                        
                         <div id="set-height">
                             <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload" >
                             <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="houyi.webm">
                             </video>
+                        </div> 
+                    </div>
+                    <div
+                        data-0="left:50%; bottom:30%;" data-2000="left:50%; bottom:30%;" 
+                        data-2500="left:50%; bottom:200%;"
+                        class="sub text">
+                        <div class="category">
+                            Background Story
                         </div>
-                        
-                    
-                </div>
-                <div
-                    data-0="left:50%; bottom:30%;" data-2000="left:50%; bottom:30%;" 
-                    data-2500="left:50%; bottom:200%;"
-                    class="sub text">
-                    <div class="category">
-                        Background Story
-                    </div>
-                    <div class="title">
-                        <img src="images/t1.png">
-                    </div>
-                    <div class="para">
-                        “Hou Yi and the Ten Suns” is a Chinese folktale that goes back to at least 2000 BCE. In the folktale, there were ten sun gods. They took turns to bring light to the world every day. One day, they got bored, and decided to come out altogether. With ten suns in the sky, powerful rays scorched the earth and turned the world into a wasteland. To prevent the destruction of the Earth, Hou Yi, a Divine Archer, was sent by the god to alleviate the heat and bring life back to the world by shooting down 9 of the 10 Suns, leaving the last one alive.
+                        <div class="title">
+                            <img src="images/t1.png">
+                        </div>
+                        <div class="para">
+                            “Hou Yi and the Ten Suns” is a Chinese folktale that goes back to at least 2000 BCE. In the folktale, there were ten sun gods. They took turns to bring light to the world every day. One day, they got bored, and decided to come out altogether. With ten suns in the sky, powerful rays scorched the earth and turned the world into a wasteland. To prevent the destruction of the Earth, Hou Yi, a Divine Archer, was sent by the god to alleviate the heat and bring life back to the world by shooting down 9 of the 10 Suns, leaving the last one alive.
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-
+            <!--section 2-->
             <div class="sec2 right sec">
                 <div class="sub material">
 <!--                    <img src="images/hy1.png">-->
@@ -151,7 +123,7 @@ data-4500  --  data-5000 move section2 ; show rest
                     </div>
                 </div>
             </div>
-
+            <!--section 3-->
             <div 
                 data-0="bottom:-200%;" data-4500="bottom:-200%;"
                 data-4500="bottom:-200%;" data-5000="bottom:0%;"
@@ -169,7 +141,6 @@ data-4500  --  data-5000 move section2 ; show rest
                         We are a group of students from different majors in Carnegie Mellon University. With an aspiration to explore storytelling through WebVR, we gathered together and came up with the project. We share a love for Chinese folktales, therefore, we chose the classic Chinese mythology “Hou Yi and Ten Suns” as our subject matter.
                     </div>
                 </div>
-
                 <div class="sub material">
                     <div class="profile">
                         <div class="pic">
@@ -178,7 +149,6 @@ data-4500  --  data-5000 move section2 ; show rest
                         <div class="name">Chen Ni</div>
                         <div class="school">School of Design</div>
                     </div>
-
                     <div class="profile">
                         <div class="pic">
                             <img src="images/team-cherie.png" style="width:10vw">
@@ -186,7 +156,6 @@ data-4500  --  data-5000 move section2 ; show rest
                         <div class="name">Cherie Chen</div>
                         <div class="school">HCII</div>
                     </div>
-
                     <div class="profile">
                         <div class="pic">
                             <img src="images/team-meng.png" style="width:10vw">
@@ -194,7 +163,6 @@ data-4500  --  data-5000 move section2 ; show rest
                         <div class="name">Mengxin Yu</div>
                         <div class="school">HCII</div>
                     </div>
-
                     <div class="profile">
                         <div class="pic">
                             <img src="images/team-shan.png" style="width:10vw">
@@ -202,7 +170,6 @@ data-4500  --  data-5000 move section2 ; show rest
                         <div class="name">Shanshan Jin</div>
                         <div class="school">Heinz College</div>
                     </div>
-
                     <div class="profile">
                         <div class="pic">
                             <img src="images/team-shengzhi.png" style="width:10vw">
@@ -210,7 +177,6 @@ data-4500  --  data-5000 move section2 ; show rest
                         <div class="name">Shengzhi Wu</div>
                         <div class="school">School of Design</div>
                     </div>
-
                     <div class="profile">
                         <div class="pic">
                             <img src="images/team-yejin.png" style="width:10vw">
@@ -219,9 +185,8 @@ data-4500  --  data-5000 move section2 ; show rest
                         <div class="school">HCII</div>
                     </div>
                 </div>
-
             </div>
-
+            <!--section 4-->
             <div 
                data-0="bottom:-200%;" data-5500="bottom:-200%;"
                data-5500="bottom:-200%;" data-6000="bottom:0%;"
@@ -286,14 +251,13 @@ data-4500  --  data-5000 move section2 ; show rest
                     </div>
                 </div>
             </div>
-
-
+            <!--section 5-->
             <div 
                 data-0="bottom:-200%;" data-6500="bottom:-200%;"
                 data-6500="bottom:-200%;" data-7000="bottom:0%;"
                 data-7000="bottom:0%;" data-7500="bottom:0%;"
                 data-7500="bottom:0%;" data-8000="bottom:200%;"
-               class="sec5 left sec">
+                class="sec5 left sec">
                 <div class="sub text">
                     <div class="category">
                         Process
@@ -306,11 +270,9 @@ data-4500  --  data-5000 move section2 ; show rest
                     </div>
                 </div>
                 <div class="sub material">
-
                 </div>
-
             </div>
-
+            <!--section 6-->
             <div 
                data-0="bottom:-200%;" data-7500="bottom:-200%;"
                data-7500="bottom:-200%;" data-8000="bottom:0%;"
@@ -332,7 +294,7 @@ data-4500  --  data-5000 move section2 ; show rest
                     </div>
                 </div>
             </div>
-
+            <!--section 7-->
             <div 
                data-0="bottom:-200%;" data-8500="bottom:-200%;"
                data-8500="bottom:-200%;" data-9000="bottom:0%;"
@@ -352,18 +314,14 @@ data-4500  --  data-5000 move section2 ; show rest
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
-    
+    <!--scroll animation js-->
     <script src="anime.min.js"></script>
-        <script type="text/javascript" src="skrollr.min.js"></script>
-        <script type="text/javascript">
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
         var s = skrollr.init();
-        </script>
-        <script  type="text/javascript" src="js/video.js"></script>
+    </script>
+    <script  type="text/javascript" src="js/video.js"></script>
 </body>
 <footer> © 2018 All right reserved</footer>
 

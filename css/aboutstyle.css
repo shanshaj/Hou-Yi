@@ -17,6 +17,7 @@ body {
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;
+
 }
 
 @font-face {
@@ -81,7 +82,7 @@ nav ul li {
 
 .nav {
     text-align: right;
-    margin-top: 18px;
+    top: 18px;
 }
 
 
@@ -130,7 +131,6 @@ nav ul li {
     padding:2%;
 }
 
-
 .category{
     font-family: "Andale Mono";
     font-size: 1em;
@@ -174,7 +174,7 @@ nav ul li {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5vw;
+    padding: 0.5vw;
 }
 
 .name{
@@ -195,15 +195,18 @@ nav ul li {
 
 /*---process---*/
 
-.sec6 .material {
-   
+.sec7 .material img{
+   width: 400px;
 }
 
 
 /*----footer---*/
+
+/*
 footer {
     height:200px;
 }
+*/
 
 
 
@@ -215,6 +218,8 @@ footer {
     -webkit-font-family: "Brandon text";
     -webkit-font-weight: 400;
 }
+
+
 
 
 
@@ -289,6 +294,7 @@ footer {
     -webkit-font-family: "Brandon text";
     -webkit-font-weight: 400;
 }
+    
 /*
 .profile{
     display:flex;

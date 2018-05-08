@@ -4,11 +4,11 @@ var sun=[];
 var sun0;
 var p;
 function setup() {
-  x=0;
-  y=0;
+  x=windowWidth / 2;
+  y=windowHeight / 2;
   a=0;
   b=1;
-  createCanvas(500,1000);
+//  createCanvas(500,1000);
   // background(0);
   for(var i=0;i<6;i++){
     sun[i]=createImg("images/suns/sun.png");
@@ -23,11 +23,13 @@ function draw() {
   // background(0);
     
   
-  TargetX= map(mouseX,0,width,10,0);
-  TargetY= map(mouseY,0,height,10,0);
+  TargetX= map(mouseX,0,windowWidth,10,0);
+  TargetY= map(mouseY,0,windowHeight,10,0);
   
   x=x+(TargetX-x)*0.05;
   y+=(TargetY-y)*0.05;
+//    x = width / 2;
+//    y = height / 2;
  
   
   randomSeed(9);
@@ -36,7 +38,7 @@ function draw() {
     nx=(noise(i+a)-.5)*size*2;
     ny=(noise(i+b)-.5)*size*2;
     sun[i].size(size,size);
-    sun[i].position(random(40,windowWidth-100)+x+nx,random(50,500/2)+y+ny);
+    sun[i].position(random(40,windowWidth-100)+x+nx,random(50,windowHeight/2)+y+ny);
     sun[i].style('z-index', 0)
   }
   

@@ -248,6 +248,27 @@ footer {
     -webkit-font-weight: 400;
 }
 
+/*----Carousel---*/
+#carouselExampleIndicators{
+    width:80%; 
+}
+
+.carousel-inner{
+border-radius: 15px 15px 15px 15px; 
+}
+    
+/*----Animation---*/
+#set-height {
+  display: block;
+}
+#v0 {
+/*  position: fixed;*/
+/*
+  top: 0;
+  left: 0;
+*/
+  width: 50%;
+}
 
 
 /*============MEDIA=============*/
@@ -340,5 +361,8 @@ footer {
 */
 
 }
+
+
+
 
 

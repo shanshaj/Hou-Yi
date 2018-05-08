@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/aboutstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="responsive-nav.css">
+    
     <script src="js/responsive-nav.js"></script>
 
     <script src="libraries/p5.js" type="text/javascript"></script>
@@ -20,6 +21,9 @@
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
 
     <script src="sketch2.js" type="text/javascript"></script>
+<!-- scroll animation-->
+    <link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script>
             var audio = new Audio('opening scene.mp3');
             audio.play();
@@ -88,9 +92,31 @@
 
             <div class="sec1 right sec">
                 <div class="sub material">
-                    <img src="images/hy1.png">
+<!-- animation-->      
+<!--
+data-0     --  data-2000 stop; show section1
+data-2000  --  data-2500 move section1 ; show section2
+data-2500  --  data-4500 stop; show section2
+data-4500  --  data-5000 move section2 ; show rest
+-->
+                    <div  
+                       data-0="left:5%; bottom:0%;" data-2000="left:5%; bottom:0%;" 
+                       data-2500="left:5%; bottom:0%;" data-4500="left:5%; bottom:0%;"
+                       data-4500="left:5%; bottom:0%;" data-5000="left:5%; bottom:200%;"
+                       class="sub material">
+                        
+                        <div id="set-height">
+                            <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload" >
+                            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="houyi.webm">
+                            </video>
+                        </div>
+                        
+                    
                 </div>
-                <div class="sub text">
+                <div
+                    data-0="left:50%; bottom:30%;" data-2000="left:50%; bottom:30%;" 
+                    data-2500="left:50%; bottom:200%;"
+                    class="sub text">
                     <div class="category">
                         Background Story
                     </div>
@@ -102,12 +128,17 @@
                     </div>
                 </div>
             </div>
+            </div>
 
             <div class="sec2 right sec">
                 <div class="sub material">
-                    <img src="images/hy1.png">
+<!--                    <img src="images/hy1.png">-->
                 </div>
-                <div class="sub text">
+                <div 
+                   data-0="left:50%; bottom:-200%;" data-2000="left:50%; bottom:-200%;" 
+                    data-2000="left:50%; bottom:-200%;" data-2500="left:50%; bottom:30%;" 
+                    data-4500="left:50%; bottom:30%;" data-5000="left:50%; bottom:200%;"
+                   class="sub text">
                     <div class="category">
                         Characters
                     </div>
@@ -121,7 +152,12 @@
                 </div>
             </div>
 
-            <div class="sec3 left sec">
+            <div 
+                data-0="bottom:-200%;" data-4500="bottom:-200%;"
+                data-4500="bottom:-200%;" data-5000="bottom:0%;"
+                data-4500="bottom:0%;" data-5500="bottom:0%;"
+                data-5500="bottom:0%;" data-6000="bottom:200%;"
+               class="sec3 left sec">
                 <div class="sub text">
                     <div class="category">
                         About us
@@ -186,7 +222,12 @@
 
             </div>
 
-            <div class="sec4 right sec">
+            <div 
+               data-0="bottom:-200%;" data-5500="bottom:-200%;"
+               data-5500="bottom:-200%;" data-6000="bottom:0%;"
+               data-6000="bottom:0%;" data-6500="bottom:0%;"
+               data-6500="bottom:0%;" data-7000="bottom:200%;"
+               class="sec4 right sec">
                 <div class="sub material">
 <!--       carousel       -->
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -247,7 +288,12 @@
             </div>
 
 
-            <div class="sec5 left sec">
+            <div 
+                data-0="bottom:-200%;" data-6500="bottom:-200%;"
+                data-6500="bottom:-200%;" data-7000="bottom:0%;"
+                data-7000="bottom:0%;" data-7500="bottom:0%;"
+                data-7500="bottom:0%;" data-8000="bottom:200%;"
+               class="sec5 left sec">
                 <div class="sub text">
                     <div class="category">
                         Process
@@ -265,7 +311,12 @@
 
             </div>
 
-            <div class="sec6 right sec">
+            <div 
+               data-0="bottom:-200%;" data-7500="bottom:-200%;"
+               data-7500="bottom:-200%;" data-8000="bottom:0%;"
+               data-8000="bottom:0%;" data-8500="bottom:0%;"
+               data-8500="bottom:0%;" data-9000="bottom:200%;"
+               class="sec6 right sec">
                 <div class="sub material">
                     <img src="images/styleguide.png">
                 </div>
@@ -282,7 +333,10 @@
                 </div>
             </div>
 
-            <div class="sec7 left sec">
+            <div 
+               data-0="bottom:-200%;" data-8500="bottom:-200%;"
+               data-8500="bottom:-200%;" data-9000="bottom:0%;"
+               class="sec7 left sec">
                 <div class="sub text">
                     <div class="category">
                         Process
@@ -303,6 +357,13 @@
 
 
     </div>
+    
+    <script src="anime.min.js"></script>
+        <script type="text/javascript" src="skrollr.min.js"></script>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+        <script  type="text/javascript" src="js/video.js"></script>
 </body>
 <footer> © 2018 All right reserved</footer>
 

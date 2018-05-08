@@ -76,6 +76,12 @@ body {
     font-weight: 500;
     transition: .4s;
 }
+footer{
+    position: absolute;
+    bottom: 1em;
+    right:50%;
+    color:dimgray;
+}
 
 
 

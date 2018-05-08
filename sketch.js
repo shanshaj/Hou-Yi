@@ -52,7 +52,7 @@ function draw() {
     }
 
     for (var i = 0; i < 15; i++) {
-        var size = random(7, 28)
+        var size = random(7, 30)
         nx = (noise(i + a) - .5) * size * 6.5;
         ny = (noise(i + b) - .5) * size * 6.5;
 

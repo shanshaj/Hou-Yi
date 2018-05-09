@@ -13,7 +13,11 @@ html {
 body {
     margin:0;
     border:0; 
+<<<<<<< HEAD
     background-image: url("../images/long_3.png");
+=======
+    background-image: url("../images/long_2.png");
+>>>>>>> ba834acb77516038d742f8fb7bfe0db52109eae6
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;

@@ -13,10 +13,11 @@ html {
 body {
     margin:0;
     border:0; 
-    background-image: url("../images/long_bg.png");
+    background-image: url("../images/long_3.png");
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;
+
 }
 
 @font-face {
@@ -52,12 +53,15 @@ nav ul li {
 
 
 .aboutButton{
-     font-family: 'Brandon Text', sans-serif;
+    font-family: 'Brandon Text', sans-serif;
     text-decoration: none;
     color: black;
     font-size: 1.2em;
     font-weight: 500;
     transition: .4s;
+    position:absolute;
+    top:5px;
+    right:5px;
 }
 
 .aboutButton:hover {
@@ -113,7 +117,7 @@ nav ul li {
 
 .nav {
     text-align: right;
-    margin-top: 18px;
+    top: 18px;
 }
 
 
@@ -162,7 +166,6 @@ nav ul li {
     padding:2%;
 }
 
-
 .category{
     font-family: "Andale Mono";
     font-size: 1em;
@@ -206,7 +209,7 @@ nav ul li {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5vw;
+    padding: 0.5vw;
 }
 
 .name{
@@ -227,20 +230,23 @@ nav ul li {
 
 /*---process---*/
 
-.sec6 .material {
-   
+.sec7 .material img{
+   width: 400px;
 }
 
 
 /*----footer---*/
+
+/*
 footer {
     height:200px;
 }
+*/
 
 
 
 .sec .para{
-    font-family: "Brandon text";
+    font-family: "Brandon text" !important;
     font-weight: 400;
     font-size: 1.3em;
     -webkit-font-size: 1.3em;
@@ -267,8 +273,10 @@ border-radius: 15px 15px 15px 15px;
   top: 0;
   left: 0;
 */
-  width: 50%;
+    height:50%;
 }
+
+
 
 
 /*============MEDIA=============*/
@@ -282,34 +290,12 @@ border-radius: 15px 15px 15px 15px;
     -webkit-font-weight: 400;
 }
 
-
-@media screen and (max-width: 750px) {
-.sec {
-    display:block;
-    margin-left:8%;
-    margin-right:8%;
-    width: 100%;
-    margin-bottom: 20vw;
-    margin-top:5vw;
-}
-    
-    
-.sub{
-    width: 80%;
-    /*background-color: aqua;*/
-    padding:2%;
-     z-index: 11;
-}
-    
-    .sec1 .material img, .sec2 .material img{
-        width: 40%;
-        z-index: 11;
-    } 
-    
-    .sec2 .material img {
-        display: hidden;
+@media screen and (max-width: 750px){
+    background-image: url("../images/mobile_long_2.png");
     }
 
+<<<<<<< HEAD
+=======
     .sec2 .title img{
         width: 50%;
     }
@@ -342,6 +328,7 @@ border-radius: 15px 15px 15px 15px;
     -webkit-font-family: "Brandon text";
     -webkit-font-weight: 400;
 }
+    
 /*
 .profile{
     display:flex;
@@ -361,6 +348,7 @@ border-radius: 15px 15px 15px 15px;
 */
 
 }
+>>>>>>> ba834acb77516038d742f8fb7bfe0db52109eae6
 
 
 

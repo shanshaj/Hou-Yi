@@ -1,0 +1,326 @@
+@import 'reset.css';
+
+html {
+    font-size: 13px;
+    line-height: 21pt;
+    font-family: 'Brandon Text', sans-serif;
+    font-weight: 300;
+}
+
+h1 { 
+    font-family: 'Brandon Text', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    padding-bottom: .5em;
+    line-height: 2em;
+    /*color:darkslategray;*/
+}
+
+h2 {
+    font-size: 3em;
+    font-weight:300;
+    padding-bottom: .5em;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-bottom: 1em;
+    font-family: 'Andale Mono', sans-serif;
+}
+
+p, em {
+    font-size: 1.2em;
+    line-height: 1.3em; 
+    padding-bottom: .5em;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background-image: url(../images/yi-backgroundimage.png);
+    background-size: 100%;
+}
+
+.about{
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: .4s;
+}
+.about:hover {
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+/*======nav======*/
+.nav ul li a{
+     font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.nav ul li:hover a{
+     font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: .4s;
+}
+footer{
+    position: absolute;
+    bottom: 1em;
+    right:50%;
+    color:dimgray;
+}
+
+
+
+/*===images===*/
+.logo {
+    padding: 4px 0 0 0;
+    width: 55px;
+  
+}
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.logo:hover{
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+
+nav ul li {
+    display:inline-block;
+    margin-left: 2em;
+}
+
+.nav {
+    text-align: right;
+    margin-top: 18px;
+}
+.nav-container {
+    padding: 20px 30px; 
+}
+
+.darken {
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hill {
+    bottom: -5vw;
+    left: -5vw;
+     width: 110vw;
+     position:fixed;
+}
+
+.hill3-1 {
+    left:-3vw;
+    bottom: -3vw;
+    width: 115vw;
+}
+
+.hill3-2 {
+    left: -5vw;
+    bottom: -5vw;
+    width: 110vw;
+}
+
+.hill3-3 {
+    left: -10vw;
+    width: 115vw;
+}
+
+.hill4 {
+    bottom: -3vw;
+}
+
+.sun {
+    width: 95vw;
+    position: fixed;
+    top: 10px;
+    left: 0px;
+}
+
+.startjourney {
+    /*mix-blend-mode: multiply;*/
+    width: 150px;
+    z-index: 100;
+}
+.hill, .sun{
+    will-change: transform; 
+    transition:transform 1.2s ease-in-out;
+    transition-timing-function: cubic-bezier(.28,.63,.77,.92)
+    
+}
+.title1{
+  width:600px;
+  margin-bottom:10px;
+  
+}
+
+#start {
+    /*mix-blend-mode: darken;*/
+}
+/*
+#top-image {
+background:url('https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/0/8/8905/red-rocks-park-o.jpg') -25px -50px;
+position:fixed ;
+top:0;
+width:100%;
+z-index:0;
+  height:100%;
+  background-size: calc(100% + 50px);
+}
+*/
+
+/*=====Layer=====*/
+.homecontainer {
+  z-index:2;
+}
+
+.title {
+   z-index:10;
+}
+
+.darken{
+  z-index:0;
+}
+
+.bottom{
+  z-index:12;
+}
+
+.nav {
+    z-index: 11;
+}
+
+/*=====BODY=====*/
+.title {
+    text-align:center;
+    position:absolute;
+    top: 15vw;
+}
+
+.title p {
+    font-size: 1.5em;
+}
+
+.button {
+    margin-top: .5em;
+}
+
+.bottomtext {
+    margin-top: 48vh;
+    position: absolute;
+    bottom: 80px;   
+}
+.b1, .b2 {
+    position:absolute;
+    bottom: 50px;
+}
+
+.b2 {
+    left: 160px;
+    bottom: 55px;
+}
+.bottomtext p{
+    color: #fff;
+    font-weight:100;
+    
+}
+
+.bottomimage p{
+    color:#fff;
+    font-weight:100;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.b1{
+    display:inline-block;
+    margin-left: 15px;
+}
+
+.nav-container {
+    padding: 20px 30px;
+  
+}
+
+.content {
+    padding: 20px 50px;
+}
+
+.bottom {
+    padding: 20px 30px;
+    position: fixed;
+    bottom: 30px;
+}
+
+/*=======About page=======*/
+.content{
+    margin-top: 20vh;
+}
+
+/*============MEDIA=============*/
+
+@media screen and (max-width: 650px) {
+    .title1 {
+        width: 300px;
+        margin-top: 80px;
+    }
+    
+    .start {
+        position:fixed;
+        left: 35vw;
+    }
+    
+    body {
+    background-size: 100% 100%;
+    }
+    
+    .button {
+    margin-top: 0;
+    }
+    
+    .bottom p{
+        text-align: center;
+        color: #000;
+    }
+    
+    .b1 {
+        left: 33vw;
+        display:block;
+    }
+    .b2 {
+        float:none;
+        left:30vw;
+        bottom: 30px;
+    }
+    .bottomtext {
+        margin-top: 40vh;
+        position: absolute;
+        left: 0vw;
+    }
+    
+    svg#stage-master {
+  background: black;
+}
+
+
+
+}

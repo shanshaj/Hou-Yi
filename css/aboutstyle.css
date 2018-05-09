@@ -1,0 +1,356 @@
+/*----initial setup----*/
+
+html {
+    margin:0;
+    border:0;
+    width:100%;
+    height:auto;
+    color:#000;
+    font-family: "Brandon text";
+}
+
+
+body {
+    margin:0;
+    border:0; 
+    background-image: url("../images/long_3.png");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+}
+
+@font-face {
+    font-family:"Brandon text";
+    src: 
+        url("/font/brandon/HVD Fonts - BrandonText-Regular.otf") format("otf");
+}
+
+@font-face {
+    font-family:"LeviReBrushed";
+    src: 
+        url("/font/levi/LeviReBrushed.ttf") format("ttf");
+}
+
+@font-face {
+    font-family:"Andale Mono";
+    src: 
+        url("/font/andale/Andale Mono.ttf") format("ttf");
+}
+
+@font-face {
+    font-family:"HL";
+    src: 
+        url("/font/HL/Hlf.ttf") format("ttf");
+}
+
+
+nav ul li {
+    display:inline-block;
+    margin-left: 2em;
+}
+/*-----navbar basic-----*/
+
+
+.aboutButton{
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: .4s;
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+
+.aboutButton:hover {
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/*======nav======*/
+.nav ul li a{
+    font-family: 'Brandon Text', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.nav {
+    text-align: right;
+    margin-top: 18px;
+}
+
+.nav {
+    text-align: right;
+    margin-top: 18px;
+}
+.nav-container {
+    padding: 20px 30px; 
+}
+
+.logo {
+    padding: 4px 0 0 0;
+    width: 55px;
+    color: black;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.logo:hover{
+    animation-name: spin;
+    animation-duration: 2s;
+    color: black;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-left: 2em;
+}
+
+.nav {
+    text-align: right;
+    top: 18px;
+}
+
+
+/*
+.nav-container{
+    height:160px;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 50px;
+}
+*/
+
+/*---main basic----*/
+
+.main_container{
+    width:100%;
+    max-width: 100%;
+    
+    /*background-color: beige;*/
+}
+
+.sec img{
+    max-width: 100%;
+    height: auto;
+    width: auto; /* ie8 */
+    
+}
+.sec {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:8%;
+    margin-right:8%;
+    max-width: 100%;
+    margin-bottom: 20vw;
+    margin-top:5vw;
+}
+
+.sub{
+    width: 50%;
+    /*background-color: aqua;*/
+    padding:2%;
+}
+
+.category{
+    font-family: "Andale Mono";
+    font-size: 1em;
+}
+
+.title{
+    font-family: "HL";
+    font-size: 3.5em;
+    margin:2vw 0;
+    
+}
+
+.para{
+    font-size: 1em;
+    line-height:1.68em;
+    margin-top:2vw;
+    
+}
+
+.sec1 .text{
+    margin-top:10vw;
+    background-image: url("/images/dot1-yellow.png");
+    background-repeat: no-repeat;
+    background-position: 20vw -3vw; 
+    z-index: 100;
+    
+}
+
+.sec2 .text{
+    margin-top:10vw;
+    background-image: url("/images/dot1-yellow.png");
+    background-repeat: no-repeat;
+    background-position: 5vw -4vw; 
+    
+}
+
+/*-----about us-------*/
+
+
+.profile{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5vw;
+}
+
+.name{
+    font-size:1.2em;
+    font-weight:500;
+    margin:0.4em;
+}
+.school{
+    font-size:0.875em;
+}
+
+.sec3 .material{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/*---process---*/
+
+.sec7 .material img{
+   width: 400px;
+}
+
+
+/*----footer---*/
+
+/*
+footer {
+    height:200px;
+}
+*/
+
+
+
+.sec .para{
+    font-family: "Brandon text" !important;
+    font-weight: 400;
+    font-size: 1.3em;
+    -webkit-font-size: 1.3em;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
+}
+
+/*----Carousel---*/
+#carouselExampleIndicators{
+    width:80%; 
+}
+
+.carousel-inner{
+border-radius: 15px 15px 15px 15px; 
+}
+    
+/*----Animation---*/
+#set-height {
+  display: block;
+}
+#v0{
+/*  position: fixed;*/
+/*
+  top: 0;
+  left: 0;
+*/
+    height:50%;
+}
+
+
+
+
+/*============MEDIA=============*/
+@media screen and (max-width: 1300px) {
+    .sec .para{
+    font-family: "Brandon text";
+    font-weight: 400;
+    font-size: 1.1em;
+    -webkit-font-size: 1.1em;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
+}
+
+@media screen and (max-width: 750px){
+    background-image: url("../images/mobile_long_2.png");
+    }
+
+<<<<<<< HEAD
+=======
+    .sec2 .title img{
+        width: 50%;
+    }
+    
+    .sec3 .material {
+        display:inline-block;
+/*        background: #fcf;*/
+    }
+    .sec3 .material .profile img {
+        width: 100%;
+/*        background: #ffc;*/
+        flex-shrink: 0;
+    }
+    
+    body {
+    margin:0;
+    border:0; 
+    background-image: url("../images/long_bg_mobile.png");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+        font-family: "Brandon text" !important;
+}
+    
+    .sec .para{
+    font-family: "Brandon text";
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-font-size: 1em;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
+}
+    
+/*
+.profile{
+    display:flex;
+    align-items: center;
+    margin: 0.5vw;
+    width: 50%;
+}
+
+.sec3 .material{
+    display:flex;
+}
+    
+    .sec3 .material img {
+        width: 30vw;
+        height: auto;
+    }
+*/
+
+}
+>>>>>>> ba834acb77516038d742f8fb7bfe0db52109eae6
+
+
+
+
+

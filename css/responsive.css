@@ -1,0 +1,124 @@
+.sec {
+    display:block;
+    margin-left:8%;
+    margin-right:8%;
+    width: 100%;
+    margin-bottom: 20vw;
+    margin-top:5vw;
+}
+    
+.sub{
+    width: 80%;
+    /*background-color: aqua;*/
+    padding:2%;
+     z-index: 11;
+}
+    
+
+    
+    .sec2 .material img {
+        display: hidden;
+    }
+
+    .sec2 .title img{
+        width: 50%;
+    }
+    
+    .sec3 .material {
+        display:inline-block;
+/*        background: #fcf;*/
+    }
+    .sec3 .material .profile img {
+        width: 100%;
+/*        background: #ffc;*/
+        flex-shrink: 0;
+    }
+    
+    body {
+    margin:0;
+    border:0; 
+    background-image: url("../images/mobile_long_2.png");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+        font-family: "Brandon text" !important;
+}
+    
+    .sec .para{
+    font-family: "Brandon text";
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-font-size: 1em;
+    -webkit-font-family: "Brandon text";
+    -webkit-font-weight: 400;
+}
+/*
+.profile{
+    display:flex;
+    align-items: center;
+    margin: 0.5vw;
+    width: 50%;
+}
+
+.sec3 .material{
+    display:flex;
+}
+    
+    .sec3 .material img {
+        width: 30vw;
+        height: auto;
+    }
+*/
+
+}
+
+
+@media screen and (max-width: 750px){
+#v0 {
+	-skrollr-animation-name:videoAnimation;
+}
+
+@-skrollr-keyframes videoAnimation {
+	0 {
+		bottom:50%;
+        left:20%;
+	}
+	2000 {
+		bottom:50%;
+        left:20%;
+	}
+    3500{
+        bottom:50%;
+        left:20%;
+    }
+    4000{
+        200%;
+    }
+}
+
+.sec1 > .text{
+    -skrollr-animation-name:section1Text;
+}
+
+@-skrollr-keyframes section1Text {
+    0 {
+		bottom:100%;
+        left:20%;
+	}
+    1000{
+        bottom:100%;
+        left:20%;
+    }
+    1500{
+        bottom:200%;
+        left:20%;
+    }
+                       
+}
+
+
+}
+
+
+
+
